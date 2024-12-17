@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome CDN -->
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#Contact">Contact</a></li>
+          <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Final Project</p>
+        <h1>Hi, I'm <span>Marc</span><br>from Poblacion Corella Bohol</h1>
+      </div>
+    </div>
+  </div>
+  <!-- About -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/ako.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>My name is Marc Jay Magan, and I am from Poblacion, Corella, Bohol. I am currently studying at Bohol Island State University, pursuing a Bachelor of Science in Information Technology. While I have faced challenges in my coursework, my passion for technology continues to drive me to explore new ideas and develop my programming and web development skills. I believe that education is the key to unlocking opportunities and making a positive impact in my community.
+            <br>
+            <br>g
+            As a student, I actively participate in activities that enhance my learning experience, even when the going gets tough. I enjoy collaborating on projects that challenge my creativity and problem-solving abilities, knowing that every struggle is an opportunity for growth. Outside of my studies, I cherish time spent with friends and family, who motivate me to persevere in achieving my goals. I look forward to using my knowledge and skills to contribute to the tech industry and overcome any obstacles that come my way.</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('Achivents')">Achivents</p>
+            <p class="tab-links" onclick="opentab('Background')">Background</p>
+          </div>
+          <div class="tab-contents active-tab" id="Skills">
+            <ul>
+              <li><span>Basketball</span><br></li>
+              <li><span>Biking</span><br></li>
+              <li><span>Hiking</span><br></li>
+              <li><span>Lay-out Design</span><br></li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="Achivents">
+            <ul>
+              <li><span>Elementary</span><br>With Honors</li>
+              <li><span>High School</span><br>With Honor / Congressman Edgar Chatto Leadership Award</li>
+              <li><span>College</span><br>None</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="Background">
+            <ul>
+              <li><span>Elementary</span><br>Corella Central Elementary School</li>
+              <li><span>High School</span><br>Corella National High School</li>
+              <li><span>College</span><br>Bohol Island State University</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- My Work -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">Projects</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/hacker.jpg">
+          <div class="layer">
+            <h3>Project 1:JAVA PROJECT</h3>
+            <p>When I was in my second year, Sir Ale has given us a project in Java Programming, I made a simple Shopping Website.</p>
+            <a href="#" class="link-icon"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/robot.jpg">
+          <div class="layer">
+            <h3>Project 2:
+              POSTER-MAKING PROJECT</h3>
+            <p>I was in my second year when Ma'am Agoc has given us a project where we should make a poster, and I made a concert poster for a K-pop idol I admire.</p>
+            <a href="#" class="link-icon"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/babae.jpg">
+          <div class="layer">
+            <h3>Project 3:
+              ANDROID PROJECT</h3>
+            <p>I created an app called MyGlam, which I submitted to Ma'am Terec as part of my third-year college project.</p>
+            <a href="#" class="link-icon"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See More</a>
+    </div>
+  </div>
+
+  <!--Contact-->
+  <div id="Contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i>contact@mojitomarc31@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i>09073635292</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/marc.jay.magan"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/rspctfly.marc/"><i class="fa-brands fa-instagram"></i></a>
+        
+        
+          </div>
+        
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" id=""  rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Made by Marc Jay Magan to be Submitted <i class="fa-solid fa-heart"></i>to Ma'am Gabo</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="final.js"></script>
+</body>
+</html>
